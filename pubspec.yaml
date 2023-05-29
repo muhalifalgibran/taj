@@ -39,6 +39,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.4
   hexcolor: ^3.0.1
+  just_audio: ^0.9.33
+  dio: ^5.1.2
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  # flutter_sound: ^9.2.13
 
 dev_dependencies:
   flutter_test:
