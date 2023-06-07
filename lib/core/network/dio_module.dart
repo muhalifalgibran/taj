@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:dio/dio.dart';
+import 'package:dio/io.dart';
 
 class DioModule with DioMixin implements Dio {
   DioModule._() {
@@ -11,12 +10,14 @@ class DioModule with DioMixin implements Dio {
       sendTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
     );
+    httpClientAdapter = IOHttpClientAdapter();
   }
 
-  Dio get dio => DioModule.init();
+  Dio get dioV1 => DioModule.init();
 
   /* Instance Getter */
   static DioModule init() {
+    print('this is get called');
     return DioModule._();
   }
 }

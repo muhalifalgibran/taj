@@ -47,6 +47,7 @@ dependencies:
   injectable: ^2.1.1
   build_runner: ^2.3.3
   injectable_generator: ^2.1.5
+  tabler_icons: ^2.5.0+1
   # flutter_sound: ^9.2.13
 
 dev_dependencies:
